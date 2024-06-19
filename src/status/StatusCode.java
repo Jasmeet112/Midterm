@@ -5,7 +5,7 @@
 package status;
 
 /**
- *
+ *This class declares an enum of StatusCode and getters and setters
  * @author jassk
  */
 
