@@ -11,24 +11,23 @@ package status;
  */
 public class StausUser 
 {
-   public void statusDetail(String code)
-{
-switch(code.toUpperCase())
-        {
-        case "ZERO": System.out.println("REJECTED");
-        break;
-        case "ONE": System.out.println("PENDING");
-        break;
-        case "TWO":
-        System.out.println("PROCESSING");
-        break;
-        case "THREE": 
-            System.out.println("APPROVED");
-        break;
-        default:
-         System.out.println("NOT VALID CODE");
-        break;
+public void statusDetail(StatusCode code) {
+        switch (code) {
+            case ZERO:
+                System.out.println("User status: " + StatusCode.ZERO.getStatus());
+                break;
+            case ONE:
+                System.out.println("User status: " + StatusCode.ONE.getStatus());
+                break;
+            case TWO:
+                System.out.println("User status: " + StatusCode.TWO.getStatus());
+                break;
+            case THREE:
+                System.out.println("User status: " + StatusCode.THREE.getStatus());
+                break;
+            default:
+                System.out.println("NOT VALID CODE");
+                break;
         }
-}
- 
+    } 
 }
